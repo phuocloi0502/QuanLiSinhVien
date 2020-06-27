@@ -42,10 +42,12 @@
                 android:textSize="15dp" />
 
             <EditText
+                android:id="@+id/edtmssv"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="0.3"
-                android:hint="nhap mssv" />
+                android:hint="nhap mssv"
+                android:inputType="number"/>
 
         </LinearLayout>
 
@@ -65,10 +67,11 @@
                 android:textSize="15dp" />
 
             <EditText
+                android:id="@+id/edthotensv"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="0.3"
-                android:hint="nhap mssv" />
+                android:hint="nhap ho ten" />
 
         </LinearLayout>
 
@@ -95,14 +98,19 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/radnam"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:buttonTint="#D81313"
+                    android:checked="true"
                     android:text="Nam" />
 
                 <RadioButton
+                    android:id="@+id/radnu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
+                    android:buttonTint="#D81313"
                     android:text="Nữ" />
             </RadioGroup>
 
@@ -113,6 +121,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -121,11 +130,13 @@
                 android:text="Chuyên ngành"
                 android:textColor="#000"
                 android:textSize="15dp" />
+
             <Spinner
+                android:id="@+id/spnganh"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="0.3"
-                android:gravity="center|left"/>
+               />
 
         </LinearLayout>
 
@@ -136,29 +147,36 @@
             android:weightSum="1">
 
             <Button
+                android:id="@+id/btnthem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="0.25"
                 android:text="Thêm"
-                android:layout_weight="0.25"
-                />
+                android:textAllCaps="false" />
+
             <Button
+                android:id="@+id/btnsua"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="0.25"
                 android:text="Sửa"
-                android:layout_weight="0.25"
-                />
+                android:textAllCaps="false" />
+
             <Button
+                android:id="@+id/btnxoa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="0.25"
                 android:text="Xóa"
-                android:layout_weight="0.25"
-                />
+                android:textAllCaps="false" />
+
             <Button
+                android:id="@+id/btnthoat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Thoát"
                 android:layout_weight="0.25"
-                />
+                android:text="Thoát"
+                android:textAllCaps="false" />
         </LinearLayout>
 
     </LinearLayout>
@@ -166,13 +184,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.4"
         android:layout_margin="10dp"
+        android:layout_weight="0.4"
         android:background="@drawable/vien"
         android:descendantFocusability="blocksDescendants">
+
         <ListView
+            android:id="@+id/listview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:padding="10dp"/>
 
     </LinearLayout>
 </LinearLayout>
